@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Digit Identifier</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='styles/main.css') }}">
+</head>
+<body onLoad="controller.start();">
+    <div id="header-container">
+        <h1>Digit Identifier</h1>
+    </div>
+    <div id="canvas"></div>
+    <div id="controls">
+        <button type="submit" class="btn" id="predict">Check</button>
+        <h2 id="prediction-wrapper">Prediction: <span id="prediction">__</span></h2>
+        <button type="reset" class="btn" id="reset">Reset</button>
+    </div>
+
+    <script src="{{ url_for('static',filename='js/index.js') }}"></script>
+</body>
+</html>
